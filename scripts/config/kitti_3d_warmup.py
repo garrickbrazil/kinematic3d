@@ -9,7 +9,7 @@ def Config():
     #  general
     # ----------------------------------------
 
-    conf.model = 'densenet121_3d_dilate_decomp_alpha_bins'
+    conf.model = 'densenet121_3d_dilate_decomp_alpha'
     
     # solver settings
     conf.solver_type = 'sgd'
@@ -37,7 +37,6 @@ def Config():
     conf.image_stds = [0.229, 0.224, 0.225]
     conf.feat_stride = 16
     
-    conf.orientation_bins = 4
     conf.has_3d = True
     conf.has_un = False
     
