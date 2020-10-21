@@ -5,9 +5,11 @@ from easydict import EasyDict as edict
 from getopt import getopt
 import numpy as np
 import sys
+import os
 
 # stop python from writing so much bytecode
 sys.dont_write_bytecode = True
+sys.path.append(os.getcwd())
 np.set_printoptions(suppress=True)
 
 # -----------------------------------------

@@ -5,11 +5,13 @@ from importlib import import_module
 from easydict import EasyDict as edict
 import torch.backends.cudnn as cudnn
 import sys
+import os
 from copy import deepcopy
 import numpy as np
 
 # stop python from writing so much bytecode
 sys.dont_write_bytecode = True
+sys.path.append(os.getcwd())
 np.set_printoptions(suppress=True)
 
 # -----------------------------------------
